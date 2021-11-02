@@ -1,0 +1,14 @@
+<h1>Developpeur</h1>
+
+<p>Nom du developpeur: {{developer?.lastName}}</p>
+<p>Prénom du developpeur : {{developer?.firstName}}</p>
+<p>Age  : {{developer?.age}}</p>
+<p>Sexe : {{developer?.sexe}}</p>
+<p>Sa biographie: {{developer?.bio}}</p>
+<p>Ses competences: </p>
+<ul>
+    <li *ngFor='let devSkill of developer?.skills'>
+      <app-skill [skill]='devSkill'></app-skill>
+    </li>
+  </ul>
+
